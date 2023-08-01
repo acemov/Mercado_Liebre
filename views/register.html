@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Registrate</title>
+</head>
+
+<body>
+    <p>Registrate 😁 </p>
+    <form action="#" method="post">
+
+        <input class="input"  type="text" name="nombre-apellido" placeholder="Nombre y Apellido">
+        <input class="input" type="text" name="nombre-user"  placeholder="Nombre de usuario">
+        <label  class="titulos" for="Fecha-de-nacimiento">Fecha de Nacimiento</label>
+        <input class="input" type="date" name="Fecha-de-nacimiento" >
+        <input class="input" type="text" name="domicilio"  placeholder="Domicilio">
+
+        <label class="titulos" for="perfil">Perfil del usuario</label>
+        <div class="perfil">
+        <label for="comprador">
+            <input type="radio" name="perfil" id="comprador" value="comprador"> Comprador
+        </label>
+        <label for="vendedor">
+            <input type="radio" name="perfil" id="vendedor" value="vendedor"> Vendedor
+        </label>
+        </div>
+
+        <label class="titulos" for="intereses">Intereses</label>
+        <label class="checkbox" for="electronica">
+            <input  type="checkbox" name="intereses" id="electronica" value="electronica"> Electronica
+        </label>
+        <label class="checkbox" for="moda">
+            <input  type="checkbox" name="intereses" id="moda" value="moda"> Moda
+        </label>
+        <label  class="checkbox" for="hogar">
+            <input type="checkbox" name="intereses" id="hogar" value="hogar"> Hogar
+        </label>
+        <label class="checkbox" for="juegueteria">
+            <input  type="checkbox" name="intereses" id="juegueteria" value="juegueteria"> Juguetería
+        </label>
+        <label class="checkbox" for="vida-sana">
+            <input  type="checkbox" name="intereses" id="vida-sana" value="vida-sana"> Vida Sana
+        </label>
+
+        <label class="titulos" for="foto">Foto de perfil</label>
+        <input class="img-a-enviar" type="file" accept=".jpg" name="avatar">
+
+        <input class="input" type="password" name="contraseña" placeholder="Contraseña">
+        <input class="input" type="password" name="contraseña-confirm" placeholder="Confirmar Contraseña">
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar Datos</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #eeede7;
+}
+
+.titulares{
+    font-size: 24px;
+}
+.precios{
+    font-size: 18px;
+}
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+}
+.descripciones{
+    font-size: 12px;
+}
+
+/* ---------------------------------------------HEADER--------------------------------------------- */
+header{
+    background-color: #EAC926;
+}
+.logo-merca{
+    width: 50%;
+}
+.enlaces{
+    color: black;
+    text-decoration: none;
+}
+.buscador{
+    padding: 5%;
+    display: flex;
+
+}
+.barra-de-buscaqueda{
+    width: 50%;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #ebebeb;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.opciones-compras{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.opciones-compras i{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.burger{
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    background-color: blue;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.imagen-home{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* ---------------------------------------------MAIN-------------------------------------------- */
+
+
+
+main{
+    margin: 0 auto 0;
+    width: 100%;
+    background-color: #eeede7;
+}
+
+main article{
+    margin:0 auto 10px;
+    width: 90%;
+    background-color: white;
+}
+main h2{
+    margin:20px 0 20px 5%; 
+}
+.borde__carrito--verde{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.productos__descripcion{
+    background-color: white;
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+}
+.precios-descuentos{
+    display: flex;
+    align-items: center;
+}
+.precios{
+    flex-grow: 0.30;
+}
+.descuentos{
+    flex-grow: 0.70;
+}
+.imagen-art{
+    width: 100%;
+}
+
+header nav {
+    display: none;
+}
+.borde__carrito--verde{
+    transition: all 1s;
+}
+.borde__carrito--verde:hover{
+    transform: rotatez(-90deg);
+}
+
+/* ---------------------------------------------FOOTER-------------------------------------------- */
+footer{
+    background-color: white;
+    text-align: center;
+}
+.iconos-footer{
+    font-size: 25px;
+    position: relative;
+    top: 15px;
+}
+
+.logos-footer{
+    color: #7e7e7e;
+    transition: all 0.1s;
+}
+
+.logos-footer:hover{
+    color: #005eff ;
+}
+
+
+
+/* ● Navegación en tablets (ancho mínimo 361 px) */
+@media (min-width: 361px){
+    /* ----------header---------- */
+    header nav{
+        display: block;
+    }
+    .burger{
+        display: none;
+    }
+    .primer-header{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 20px;
+        min-height: 80px;
+    }
+    .buscador{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+    .barra-de-buscaqueda{
+        height: 20px;
+        
+    }
+    .logo-merca{
+        width: 50%;
+        height: 50%;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5% ;
+    }
+    .navegador-1,.navegador-2{
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    /* ----navegador 1 ---- */
+    .enclaces-medio-2{
+        margin: 0 10px;
+    }
+    .enclaces-medio-14{
+        margin-right: 10px;
+    }
+    .enclaces-medio-18{
+        margin-left: 10px;
+    }
+    .enclaces-medio{
+        margin: 0 20px;
+    }
+    .navegador-2{
+        justify-content: flex-end;
+    }
+    /* ----------main---------- */
+    main h2{
+        margin-left: 7%;
+    }
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main section article{
+        flex-basis: 40%;
+    }
+    main article {
+        transition: all 1s;
+        margin: 10px;
+    }
+    
+    .productos__descripcion h3 {
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    
+    main article:hover .productos__descripcion h3 {
+        opacity: 1; 
+    }
+    
+    main article:hover {
+        box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.5);
+    }
+    
+    /* ----------footer---------- */
+
+}
+/* ● Navegación en desktop (ancho mínimo 769 px) */
+@media (min-width: 769px){
+    /* ----------header---------- */
+    header nav ul{
+        display: flex;
+        
+    }
+    .navegador-1,.navegador-2{
+        display: flex;
+        margin: 0 10px;
+    }
+    .navegador-2 li a i{
+        margin-right: 2px;
+    }
+    /* ----------main---------- */
+
+    main section article{
+        flex-basis: 20%;
+    }
+    /* ----------footer---------- */
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 50px 0px 50px;
+    }
+    footer section{
+        flex-basis: 32%;
+    }
+    .para-Copyright{
+        justify-self: flex-start;
+        flex-basis: 100%;
+        display: flex;
+        padding: 30px 0 5px 30px ;
+    }
+}
