@@ -264,6 +264,10 @@ footer{
     .navegador-2 li a i{
         margin-right: 2px;
     }
+    .primer-header{
+        padding: 0 5%;
+        justify-content: space-between;
+    }
     /* ----------main---------- */
 
     main section article{
